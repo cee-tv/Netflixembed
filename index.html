@@ -1,11 +1,49 @@
-<!--  Fullscreen Video CSS -->
-<style>
-  #player {
-    position: absolute;
-    width: 100% !important;
-    height: 100% !important;
-  }
-</style>
+<!--
 
-<!-- Player -->
-<div id="player"></div>
+Testando a API do JW8 para adicionar ao
+Netflix Skin for JWPLAYER8 v2.0.4
+
+JWPlayer8 JavaScript API
+https://developer.jwplayer.com/jwplayer/docs/jw8-javascript-api-reference
+
+-->
+
+<div class="container">
+  <div id="player"></div>
+
+  <div class="mt-2">
+    <button type="button" class="btn btn-secondary rewind10seconds">Rewind 10 seconds</button>
+    <button type="button" class="btn btn-secondary foward10seconds">Forward 10 seconds</button>
+    <button type="button" class="btn btn-secondary play">Play video</button>
+    <button type="button" class="btn btn-secondary pause">Pause video</button>
+  </div>
+
+  <div class="mt-3 d-flex justify-content-center">
+    <script type="text/javascript">
+      atOptions = {
+        'key': 'd9053a7ed230d013bb700ab10e86df53',
+        'format': 'iframe',
+        'height': 90,
+        'width': 728,
+        'params': {}
+      };
+      document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://madrogueindulge.com/d9053a7ed230d013bb700ab10e86df53/invoke.js"></scr' + 'ipt>');
+    </script>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="adblockModal" tabindex="-1" aria-labelledby="adblockModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Adblock Detected!</h5>
+          <button type="button" id="closeAdblockModal" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis corporis, unde qui molestiae modi tempora quibusdam rerum nihil vel nisi in saepe perspiciatis quisquam tenetur reprehenderit odit consequatur? Dolorum sint ullam fugiat velit illum ipsum? Inventore accusamus repudiandae provident voluptatum, dolor magni esse dicta, natus soluta quasi amet saepe commodi est dolorem dolorum odit. Eos quaerat rem magnam cupiditate reiciendis quis aliquam. Temporibus dolorem ipsa, fugit reiciendis reprehenderit perferendis! Voluptate dolore debitis veniam est facere voluptatum distinctio quisquam blanditiis vitae ipsa quasi, quam reiciendis cupiditate et assumenda harum fugiat, exercitationem accusantium impedit! Ipsum corporis cumque, dolorum aliquid possimus mollitia.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
